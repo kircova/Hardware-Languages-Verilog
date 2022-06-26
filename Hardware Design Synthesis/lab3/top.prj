@@ -1,0 +1,6 @@
+verilog work "take_inputs.v"
+verilog work "process_inputs.v"
+verilog work "lcdi.v"
+verilog work "buttonCorrect.v"
+verilog work "add.v"
+verilog work "top.v"

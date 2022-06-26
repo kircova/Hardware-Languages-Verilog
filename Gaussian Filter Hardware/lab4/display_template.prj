@@ -1,0 +1,4 @@
+verilog work "vga_controller_640_60.v"
+verilog work "lena_input.v"
+verilog work "block_ram.v"
+verilog work "display_template.v"

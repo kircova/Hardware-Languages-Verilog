@@ -1,0 +1,142 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 23 23:50:51 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "B" LOCATE = SITE "G15" LEVEL 1;
+COMP "R" LOCATE = SITE "H14" LEVEL 1;
+COMP "hs" LOCATE = SITE "F15" LEVEL 1;
+COMP "vs" LOCATE = SITE "F14" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "rst" LOCATE = SITE "K17" LEVEL 1;
+COMP "G" LOCATE = SITE "H15" LEVEL 1;
+COMP "LED1" LOCATE = SITE "F12" LEVEL 1;
+COMP "LED2" LOCATE = SITE "E12" LEVEL 1;
+COMP "BTN_EAST" LOCATE = SITE "H13" LEVEL 1;
+COMP "BTN_WEST" LOCATE = SITE "D18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+PIN result/Mram_reg_file2.A_pins<15> = BEL "result/Mram_reg_file2.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file2.B_pins<15> = BEL "result/Mram_reg_file2.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file1.A_pins<15> = BEL "result/Mram_reg_file1.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file1.B_pins<15> = BEL "result/Mram_reg_file1.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file5.A_pins<15> = BEL "result/Mram_reg_file5.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file5.B_pins<15> = BEL "result/Mram_reg_file5.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file3.A_pins<15> = BEL "result/Mram_reg_file3.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file3.B_pins<15> = BEL "result/Mram_reg_file3.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file4.A_pins<15> = BEL "result/Mram_reg_file4.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file4.B_pins<15> = BEL "result/Mram_reg_file4.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file8.A_pins<15> = BEL "result/Mram_reg_file8.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file8.B_pins<15> = BEL "result/Mram_reg_file8.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file6.A_pins<15> = BEL "result/Mram_reg_file6.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file6.B_pins<15> = BEL "result/Mram_reg_file6.B" PINNAME
+        CLKB;
+PIN result/Mram_reg_file7.A_pins<15> = BEL "result/Mram_reg_file7.A" PINNAME
+        CLKA;
+PIN result/Mram_reg_file7.B_pins<15> = BEL "result/Mram_reg_file7.B" PINNAME
+        CLKB;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+PIN
+        lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>
+        = BEL
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram.A"
+        PINNAME CLKA;
+TIMEGRP clk = BEL "curr_state_0" BEL "curr_state_1" BEL "curr_state_2" BEL
+        "row_addr_0" BEL "row_addr_1" BEL "row_addr_2" BEL "row_addr_3" BEL
+        "row_addr_4" BEL "row_addr_5" BEL "row_addr_6" BEL "col_addr_0" BEL
+        "col_addr_1" BEL "col_addr_2" BEL "col_addr_3" BEL "col_addr_4" BEL
+        "col_addr_5" BEL "col_addr_6" BEL "op_counter_0" BEL "op_counter_1"
+        BEL "op_counter_2" BEL "op_counter_3" BEL "i1_0" BEL "i1_1" BEL "i1_2"
+        BEL "i1_3" BEL "i1_4" BEL "i1_5" BEL "i1_6" BEL "i1_7" BEL "i2_0" BEL
+        "i2_1" BEL "i2_2" BEL "i2_3" BEL "i2_4" BEL "i2_5" BEL "i2_6" BEL
+        "i2_7" BEL "i3_0" BEL "i3_1" BEL "i3_2" BEL "i3_3" BEL "i3_4" BEL
+        "i3_5" BEL "i3_6" BEL "i3_7" BEL "wen_out" BEL "waddr_out_0" BEL
+        "waddr_out_1" BEL "waddr_out_2" BEL "waddr_out_3" BEL "waddr_out_4"
+        BEL "waddr_out_5" BEL "waddr_out_6" BEL "waddr_out_7" BEL
+        "waddr_out_8" BEL "waddr_out_9" BEL "waddr_out_10" BEL "waddr_out_11"
+        BEL "waddr_out_12" BEL "waddr_out_13" BEL "wdata_out_0" BEL
+        "wdata_out_1" BEL "wdata_out_2" BEL "wdata_out_3" BEL "wdata_out_4"
+        BEL "wdata_out_5" BEL "wdata_out_6" BEL "wdata_out_7" BEL "LED1" BEL
+        "LED2" BEL "vga_cont/clk_25" BEL "op_counter_1_1" BEL "op_counter_2_1"
+        BEL "curr_state_1_1" BEL "curr_state_0_1" BEL "curr_state_2_1" PIN
+        "result/Mram_reg_file2.A_pins<15>" PIN
+        "result/Mram_reg_file2.B_pins<15>" PIN
+        "result/Mram_reg_file1.A_pins<15>" PIN
+        "result/Mram_reg_file1.B_pins<15>" PIN
+        "result/Mram_reg_file5.A_pins<15>" PIN
+        "result/Mram_reg_file5.B_pins<15>" PIN
+        "result/Mram_reg_file3.A_pins<15>" PIN
+        "result/Mram_reg_file3.B_pins<15>" PIN
+        "result/Mram_reg_file4.A_pins<15>" PIN
+        "result/Mram_reg_file4.B_pins<15>" PIN
+        "result/Mram_reg_file8.A_pins<15>" PIN
+        "result/Mram_reg_file8.B_pins<15>" PIN
+        "result/Mram_reg_file6.A_pins<15>" PIN
+        "result/Mram_reg_file6.B_pins<15>" PIN
+        "result/Mram_reg_file7.A_pins<15>" PIN
+        "result/Mram_reg_file7.B_pins<15>" PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        PIN
+        "lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram.A_pins<15>"
+        BEL "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

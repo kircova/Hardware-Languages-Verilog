@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\EE310Projects\lab3\top.ncd
+OUTFILE=D:\EE310Projects\lab3\top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\EE310Projects\lab3
+LICENSE=WebPack
+USER_INFO=__0_0_0

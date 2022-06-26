@@ -1,0 +1,174 @@
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 
+xst -intstyle ise -ifn "D:/EE310Projects/lab4/display_template.xst" -ofn "D:/EE310Projects/lab4/display_template.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc3s500e-fg320-4 display_template.ngc display_template.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o display_template_map.ncd display_template.ngd display_template.pcf 
+par -w -intstyle ise -ol high -t 1 display_template_map.ncd display_template.ncd display_template.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml display_template.twx display_template.ncd -o display_template.twr display_template.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f display_template.ut display_template.ncd 

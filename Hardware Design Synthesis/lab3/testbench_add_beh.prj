@@ -1,0 +1,5 @@
+verilog work "take_inputs.v"
+verilog work "process_inputs.v"
+verilog work "add.v"
+verilog work "testbench_add.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

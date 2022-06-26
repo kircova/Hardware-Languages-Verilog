@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/EE310Projects/lab_1/sp_interpolator.xst" -ofn "D:/EE310Projects/lab_1/sp_interpolator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 sp_interpolator.ngc sp_interpolator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o sp_interpolator_map.ncd sp_interpolator.ngd sp_interpolator.pcf 

@@ -1,0 +1,12 @@
+[Inputs]
+Clock
+Reset
+BTN
+=SW[3:0]=
+[Outputs]
+=LCD_Control[2:0]=
+=Data_Out[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel top
+

@@ -1,0 +1,624 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: display_template.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "display_template.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "display_template"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : display_template
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "vga_controller_640_60.v" in library work
+Compiling verilog file "lena_input.v" in library work
+Module <vga_controller_640_60> compiled
+Compiling verilog file "block_ram.v" in library work
+Module <lena_input> compiled
+Compiling verilog file "display_template.v" in library work
+Module <block_ram> compiled
+Module <display_template> compiled
+No errors in compilation
+Analysis of file <"display_template.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <display_template> in library <work> with parameters.
+	BTN1_PRESS = "00000000000000000000000000000001"
+	BTN2_PRESS = "00000000000000000000000000000100"
+	IDLE = "00000000000000000000000000000000"
+	OP1_FINISHED = "00000000000000000000000000000010"
+	OP_FINISHED = "00000000000000000000000000000011"
+
+Analyzing hierarchy for module <vga_controller_640_60> in library <work> with parameters.
+	HFP = "01010001000"
+	HLINES = "01010000000"
+	HMAX = "01100100000"
+	HSP = "01011101000"
+	VFP = "00111100010"
+	VLINES = "00111100000"
+	VMAX = "01000001101"
+	VSP = "00111100100"
+
+Analyzing hierarchy for module <block_ram> in library <work> with parameters.
+	ADDR_SIZE = "00000000000000000000000000001110"
+	DATA_ELMT = "00000000000000000100000000000000"
+	DATA_SIZE = "00000000000000000000000000001000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <display_template>.
+	BTN1_PRESS = 32'sb00000000000000000000000000000001
+	BTN2_PRESS = 32'sb00000000000000000000000000000100
+	IDLE = 32'sb00000000000000000000000000000000
+	OP1_FINISHED = 32'sb00000000000000000000000000000010
+	OP_FINISHED = 32'sb00000000000000000000000000000011
+WARNING:Xst:2211 - "lena_input.v" line 51: Instantiating black box module <lena_input>.
+Module <display_template> is correct for synthesis.
+ 
+Analyzing module <vga_controller_640_60> in library <work>.
+	HFP = 11'b01010001000
+	HLINES = 11'b01010000000
+	HMAX = 11'b01100100000
+	HSP = 11'b01011101000
+	VFP = 11'b00111100010
+	VLINES = 11'b00111100000
+	VMAX = 11'b01000001101
+	VSP = 11'b00111100100
+Module <vga_controller_640_60> is correct for synthesis.
+ 
+Analyzing module <block_ram> in library <work>.
+	ADDR_SIZE = 32'sb00000000000000000000000000001110
+	DATA_ELMT = 32'sb00000000000000000100000000000000
+	DATA_SIZE = 32'sb00000000000000000000000000001000
+Module <block_ram> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <vga_controller_640_60>.
+    Related source file is "vga_controller_640_60.v".
+    Found 11-bit up counter for signal <vcount>.
+    Found 1-bit register for signal <HS>.
+    Found 11-bit up counter for signal <hcount>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <blank>.
+    Found 1-bit register for signal <clk_25>.
+    Found 11-bit comparator greatequal for signal <HS$cmp_ge0000> created at line 114.
+    Found 11-bit comparator less for signal <HS$cmp_lt0000> created at line 114.
+    Found 11-bit comparator less for signal <video_enable$cmp_lt0000> created at line 122.
+    Found 11-bit comparator less for signal <video_enable$cmp_lt0001> created at line 122.
+    Found 11-bit comparator greatequal for signal <VS$cmp_ge0000> created at line 116.
+    Found 11-bit comparator less for signal <VS$cmp_lt0000> created at line 116.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller_640_60> synthesized.
+
+
+Synthesizing Unit <block_ram>.
+    Related source file is "block_ram.v".
+    Found 16384x8-bit dual-port RAM <Mram_reg_file> for signal <reg_file>.
+    Found 14-bit register for signal <read_addr_d>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  14 D-type flip-flop(s).
+Unit <block_ram> synthesized.
+
+
+Synthesizing Unit <display_template>.
+    Related source file is "display_template.v".
+WARNING:Xst:1780 - Signal <values> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <temp<1:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <I00> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 14-bit latch for signal <read_addr_op>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 14-bit latch for signal <raddr_out_op>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit register for signal <LED1>.
+    Found 1-bit register for signal <LED2>.
+    Found 7-bit register for signal <col_addr>.
+    Found 7-bit adder for signal <col_addr$share0000>.
+    Found 3-bit register for signal <curr_state>.
+    Found 8-bit register for signal <i1>.
+    Found 8-bit register for signal <i2>.
+    Found 8-bit register for signal <i3>.
+    Found 4-bit register for signal <op_counter>.
+    Found 4-bit adder for signal <op_counter$addsub0000>.
+    Found 11-bit comparator greatequal for signal <raddr_out_in$cmp_ge0000> created at line 345.
+    Found 11-bit comparator less for signal <raddr_out_in$cmp_lt0000> created at line 345.
+    Found 7-bit adder carry out for signal <raddr_out_op$addsub0000> created at line 207.
+    Found 9-bit subtractor for signal <raddr_out_op$sub0000> created at line 205.
+    Found 11-bit comparator less for signal <read_addr_in$cmp_lt0000> created at line 339.
+    Found 11-bit comparator less for signal <read_addr_in$cmp_lt0001> created at line 339.
+    Found 7-bit adder carry out for signal <read_addr_op$addsub0000> created at line 199.
+    Found 9-bit subtractor for signal <read_addr_op$sub0000> created at line 197.
+    Found 7-bit register for signal <row_addr>.
+    Found 7-bit adder for signal <row_addr$share0000>.
+    Found 10-bit adder for signal <temp>.
+    Found 10-bit adder for signal <temp$addsub0000> created at line 254.
+    Found 14-bit register for signal <waddr_out>.
+    Found 8-bit register for signal <wdata_out>.
+    Found 1-bit register for signal <wen_out>.
+    Found 7-bit comparator greater for signal <wen_out$cmp_gt0000> created at line 269.
+    Found 7-bit comparator greater for signal <wen_out$cmp_gt0001> created at line 274.
+    Summary:
+	inferred  70 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <display_template> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port RAM                             : 1
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit adder carry out                                 : 2
+ 9-bit subtractor                                      : 2
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 17
+ 1-bit register                                        : 7
+ 14-bit register                                       : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 2
+ 8-bit register                                        : 4
+# Latches                                              : 2
+ 14-bit latch                                          : 2
+# Comparators                                          : 12
+ 11-bit comparator greatequal                          : 3
+ 11-bit comparator less                                : 7
+ 7-bit comparator greater                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <lena_input.ngc>.
+Loading core <lena_input> for timing and area information for instance <lena_in>.
+
+Synthesizing (advanced) Unit <block_ram>.
+INFO:Xst:3226 - The RAM <Mram_reg_file> will be implemented as a BLOCK RAM, absorbing the following register(s): <read_addr_d>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <write_en>      | high     |
+    |     addrA          | connected to signal <write_addr>    |          |
+    |     diA            | connected to signal <write_data>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 16384-word x 8-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <read_addr>     |          |
+    |     doB            | connected to signal <data_out>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <block_ram> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 16384x8-bit dual-port block RAM                       : 1
+# Adders/Subtractors                                   : 9
+ 10-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 7-bit adder                                           : 2
+ 7-bit adder carry out                                 : 2
+ 7-bit subtractor                                      : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 11-bit up counter                                     : 2
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+# Latches                                              : 2
+ 14-bit latch                                          : 2
+# Comparators                                          : 12
+ 11-bit comparator greatequal                          : 3
+ 11-bit comparator less                                : 7
+ 7-bit comparator greater                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <display_template> ...
+
+Optimizing unit <vga_controller_640_60> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block display_template, actual ratio is 3.
+FlipFlop curr_state_0 has been replicated 1 time(s)
+FlipFlop curr_state_1 has been replicated 1 time(s)
+FlipFlop curr_state_2 has been replicated 1 time(s)
+FlipFlop op_counter_1 has been replicated 1 time(s)
+FlipFlop op_counter_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : display_template.ngr
+Top Level Output File Name         : display_template
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 382
+#      GND                         : 2
+#      INV                         : 3
+#      LUT1                        : 21
+#      LUT2                        : 44
+#      LUT2_D                      : 2
+#      LUT2_L                      : 1
+#      LUT3                        : 42
+#      LUT3_D                      : 4
+#      LUT3_L                      : 1
+#      LUT4                        : 161
+#      LUT4_D                      : 23
+#      LUT4_L                      : 3
+#      MUXCY                       : 29
+#      MUXF5                       : 14
+#      MUXF6                       : 1
+#      VCC                         : 2
+#      XORCY                       : 29
+# FlipFlops/Latches                : 129
+#      FDC                         : 90
+#      FDCE                        : 11
+#      LD                          : 28
+# RAMS                             : 16
+#      RAMB16_S1_S1                : 16
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 3
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      167  out of   4656     3%  
+ Number of Slice Flip Flops:            129  out of   9312     1%  
+ Number of 4 input LUTs:                305  out of   9312     3%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of BRAMs:                        16  out of     20    80%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                       | Clock buffer(FF name)                                                                                                       | Load  |
+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+clk                                                | BUFGP                                                                                                                       | 92    |
+lena_in/N1                                         | NONE(lena_in/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/s3_init.ram/dpram.dp1x1.ram)| 8     |
+next_state_cmp_eq0004(next_state_cmp_eq00041:O)    | NONE(*)(raddr_out_op_0)                                                                                                     | 14    |
+read_addr_op_cmp_eq0000(read_addr_op_cmp_eq00001:O)| NONE(*)(read_addr_op_0)                                                                                                     | 14    |
+vga_cont/clk_251                                   | BUFG                                                                                                                        | 25    |
+---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 101   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.195ns (Maximum Frequency: 138.985MHz)
+   Minimum input arrival time before clock: 4.145ns
+   Maximum output required time after clock: 10.601ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.811ns (frequency: 146.821MHz)
+  Total number of paths / destination ports: 3191 / 428
+-------------------------------------------------------------------------
+Delay:               6.811ns (Levels of Logic = 4)
+  Source:            op_counter_0 (FF)
+  Destination:       col_addr_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: op_counter_0 to col_addr_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.591   0.937  op_counter_0 (op_counter_0)
+     LUT4_D:I3->O         13   0.704   1.062  next_state_cmp_eq00031 (next_state_cmp_eq0003)
+     LUT2:I1->O            1   0.704   0.424  col_addr_mux0000<1>3_SW0 (N99)
+     LUT4_D:I3->O          6   0.704   0.673  col_addr_mux0000<1>3 (N27)
+     LUT4:I3->O            1   0.704   0.000  col_addr_mux0000<4>1 (col_addr_mux0000<4>)
+     FDC:D                     0.308          col_addr_4
+    ----------------------------------------
+    Total                      6.811ns (3.715ns logic, 3.096ns route)
+                                       (54.5% logic, 45.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vga_cont/clk_251'
+  Clock period: 7.195ns (frequency: 138.985MHz)
+  Total number of paths / destination ports: 653 / 36
+-------------------------------------------------------------------------
+Delay:               7.195ns (Levels of Logic = 4)
+  Source:            vga_cont/hcount_6 (FF)
+  Destination:       vga_cont/vcount_10 (FF)
+  Source Clock:      vga_cont/clk_251 rising
+  Destination Clock: vga_cont/clk_251 rising
+
+  Data Path: vga_cont/hcount_6 to vga_cont/vcount_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.591   0.808  vga_cont/hcount_6 (vga_cont/hcount_6)
+     LUT4_D:I0->O          4   0.704   0.622  vga_cont/hcount_cmp_eq00008 (vga_cont/hcount_cmp_eq00008)
+     LUT3:I2->O           19   0.704   1.089  vga_cont/hcount_cmp_eq000041 (vga_cont/hcount_cmp_eq0000)
+     LUT4_D:I3->O         10   0.704   0.961  vga_cont/vcount_and000055 (vga_cont/vcount_and0000)
+     LUT2:I1->O            1   0.704   0.000  vga_cont/Mcount_vcount_eqn_01 (vga_cont/Mcount_vcount_eqn_0)
+     FDCE:D                    0.308          vga_cont/vcount_0
+    ----------------------------------------
+    Total                      7.195ns (3.715ns logic, 3.480ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 14 / 6
+-------------------------------------------------------------------------
+Offset:              4.145ns (Levels of Logic = 3)
+  Source:            BTN_EAST (PAD)
+  Destination:       curr_state_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: BTN_EAST to curr_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.712  BTN_EAST_IBUF (BTN_EAST_IBUF)
+     LUT4:I1->O            1   0.704   0.499  next_state<0>_SW3 (N125)
+     LUT4:I1->O            2   0.704   0.000  next_state<0> (next_state<0>)
+     FDC:D                     0.308          curr_state_0
+    ----------------------------------------
+    Total                      4.145ns (2.934ns logic, 1.211ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 26 / 5
+-------------------------------------------------------------------------
+Offset:              8.961ns (Levels of Logic = 3)
+  Source:            result/Mram_reg_file8 (RAM)
+  Destination:       B (PAD)
+  Source Clock:      clk rising
+
+  Data Path: result/Mram_reg_file8 to B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S1_S1:CLKB->DOB0    2   2.800   0.526  result/Mram_reg_file8 (rdata_out<7>)
+     LUT3:I1->O            1   0.704   0.424  G_SW0 (N103)
+     LUT4:I3->O            3   0.704   0.531  G (G_OBUF)
+     OBUF:I->O                 3.272          B_OBUF (B)
+    ----------------------------------------
+    Total                      8.961ns (7.480ns logic, 1.481ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_cont/clk_251'
+  Total number of paths / destination ports: 62 / 5
+-------------------------------------------------------------------------
+Offset:              10.601ns (Levels of Logic = 6)
+  Source:            vga_cont/vcount_10 (FF)
+  Destination:       B (PAD)
+  Source Clock:      vga_cont/clk_251 rising
+
+  Data Path: vga_cont/vcount_10 to B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.844  vga_cont/vcount_10 (vga_cont/vcount_10)
+     LUT4:I0->O            3   0.704   0.610  read_addr_in_cmp_lt00001 (read_addr_in_cmp_lt0000)
+     LUT4:I1->O            1   0.704   0.000  R_and000121 (R_and00012)
+     MUXF5:I0->O          15   0.321   1.192  R_and00012_f5 (raddr_out_in_and0000)
+     LUT3:I0->O            1   0.704   0.424  G_SW0 (N103)
+     LUT4:I3->O            3   0.704   0.531  G (G_OBUF)
+     OBUF:I->O                 3.272          B_OBUF (B)
+    ----------------------------------------
+    Total                     10.601ns (7.000ns logic, 3.601ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.07 secs
+ 
+--> 
+
+Total memory usage is 4509532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

@@ -1,0 +1,73 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 02 15:54:34 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "BTN" LOCATE = SITE "V4" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "L13" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "H18" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "N17" LEVEL 1;
+COMP "Clock" LOCATE = SITE "C9" LEVEL 1;
+COMP "Reset" LOCATE = SITE "K17" LEVEL 1;
+COMP "Data_Out<0>" LOCATE = SITE "R15" LEVEL 1;
+COMP "Data_Out<1>" LOCATE = SITE "R16" LEVEL 1;
+COMP "Data_Out<2>" LOCATE = SITE "P17" LEVEL 1;
+COMP "Data_Out<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "LCD_Control<0>" LOCATE = SITE "L17" LEVEL 1;
+COMP "LCD_Control<1>" LOCATE = SITE "L18" LEVEL 1;
+COMP "LCD_Control<2>" LOCATE = SITE "M18" LEVEL 1;
+NET "Clock_BUFGP/IBUFG" BEL "Clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP Clock = BEL "bc1/sum2_9" BEL "bc1/sum2_8" BEL "bc1/sum2_7" BEL
+        "bc1/sum2_6" BEL "bc1/sum2_5" BEL "bc1/sum2_4" BEL "bc1/sum2_3" BEL
+        "bc1/sum2_2" BEL "bc1/sum2_1" BEL "bc1/sum2_0" BEL "bc1/counter_9" BEL
+        "bc1/counter_8" BEL "bc1/counter_7" BEL "bc1/counter_6" BEL
+        "bc1/counter_5" BEL "bc1/counter_4" BEL "bc1/counter_3" BEL
+        "bc1/counter_2" BEL "bc1/counter_1" BEL "bc1/counter_0" BEL
+        "bc1/buttonC" BEL "bc1/buttonCor" BEL "bc1/state" BEL
+        "li1/state_FSM_FFd21" BEL "li1/state_FSM_FFd22" BEL
+        "li1/state_FSM_FFd11" BEL "li1/state_FSM_FFd44" BEL
+        "li1/state_FSM_FFd34" BEL "li1/state_FSM_FFd23" BEL
+        "li1/state_FSM_FFd12" BEL "li1/state_FSM_FFd2" BEL "li1/DR_6" BEL
+        "li1/DR_4" BEL "li1/sel_1" BEL "li1/sel_0" BEL "li1/delay_24" BEL
+        "li1/delay_23" BEL "li1/delay_20" BEL "li1/delay_18" BEL
+        "li1/delay_15" BEL "li1/delay_0" BEL "add1/ti/counter_3" BEL
+        "add1/ti/counter_2" BEL "add1/ti/counter_1" BEL "add1/ti/counter_0"
+        BEL "add1/ti/format_0" BEL "add1/ti/operand2_0" BEL
+        "add1/ti/operand2_1" BEL "add1/ti/operand2_2" BEL "add1/ti/operand2_3"
+        BEL "add1/ti/operand2_4" BEL "add1/ti/operand2_6" BEL
+        "add1/ti/operand2_7" BEL "add1/ti/operand2_5" BEL "add1/ti/operand1_0"
+        BEL "add1/ti/operand1_1" BEL "add1/ti/operand1_3" BEL
+        "add1/ti/operand1_4" BEL "add1/ti/operand1_2" BEL "add1/ti/operand1_5"
+        BEL "add1/ti/operand1_6" BEL "add1/ti/start" BEL "add1/ti/operand1_7"
+        BEL "li1/state_FSM_FFd32" BEL "li1/DR_7" BEL "li1/DR_5" BEL "li1/DR_3"
+        BEL "li1/DR_2" BEL "li1/DR_1" BEL "li1/DR_0" BEL "li1/sel_2" BEL
+        "li1/dataout_3" BEL "li1/dataout_2" BEL "li1/dataout_1" BEL
+        "li1/dataout_0" BEL "li1/delay_25" BEL "li1/delay_22" BEL
+        "li1/delay_21" BEL "li1/delay_19" BEL "li1/delay_17" BEL
+        "li1/delay_16" BEL "li1/delay_14" BEL "li1/delay_13" BEL
+        "li1/delay_12" BEL "li1/delay_11" BEL "li1/delay_10" BEL "li1/delay_9"
+        BEL "li1/delay_8" BEL "li1/delay_7" BEL "li1/delay_6" BEL
+        "li1/delay_5" BEL "li1/delay_4" BEL "li1/delay_3" BEL "li1/delay_2"
+        BEL "li1/delay_1" BEL "li1/control_2" BEL "li1/control_1" BEL
+        "li1/state_FSM_FFd40" BEL "li1/state_FSM_FFd42" BEL
+        "li1/state_FSM_FFd38" BEL "li1/state_FSM_FFd37" BEL
+        "li1/state_FSM_FFd39" BEL "li1/state_FSM_FFd35" BEL
+        "li1/state_FSM_FFd36" BEL "li1/state_FSM_FFd30" BEL
+        "li1/state_FSM_FFd29" BEL "li1/state_FSM_FFd27" BEL
+        "li1/state_FSM_FFd26" BEL "li1/state_FSM_FFd28" BEL
+        "li1/state_FSM_FFd24" BEL "li1/state_FSM_FFd25" BEL
+        "li1/state_FSM_FFd19" BEL "li1/state_FSM_FFd18" BEL
+        "li1/state_FSM_FFd16" BEL "li1/state_FSM_FFd15" BEL
+        "li1/state_FSM_FFd17" BEL "li1/state_FSM_FFd13" BEL
+        "li1/state_FSM_FFd14" BEL "li1/state_FSM_FFd8" BEL
+        "li1/state_FSM_FFd7" BEL "li1/state_FSM_FFd9" BEL "li1/state_FSM_FFd5"
+        BEL "li1/state_FSM_FFd4" BEL "li1/state_FSM_FFd6" BEL
+        "li1/state_FSM_FFd3" BEL "li1/state_FSM_FFd43" BEL
+        "li1/state_FSM_FFd41" BEL "li1/state_FSM_FFd33" BEL
+        "li1/state_FSM_FFd31" BEL "li1/state_FSM_FFd20" BEL
+        "li1/state_FSM_FFd10" BEL "li1/state_FSM_FFd1" BEL
+        "Clock_BUFGP/BUFG.GCLKMUX" BEL "Clock_BUFGP/BUFG";
+TS_Clock = PERIOD TIMEGRP "Clock" 20 ns HIGH 50%;
+SCHEMATIC END;
+

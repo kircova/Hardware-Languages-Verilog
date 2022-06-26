@@ -1,0 +1,4 @@
+MO vga_controller_640_60 NULL vga_controller_640_60.v vlg27/vga__controller__640__60.bin 1656017439
+MO block_ram NULL block_ram.v vlg16/block__ram.bin 1656017439
+MO lena_input NULL lena_input.v vlg07/lena__input.bin 1656017439
+MO display_template NULL display_template.v vlg25/display__template.bin 1656017439

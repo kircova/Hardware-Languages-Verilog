@@ -1,0 +1,3 @@
+verilog work "take_inputs.v"
+verilog work "process_inputs.v"
+verilog work "add.v"

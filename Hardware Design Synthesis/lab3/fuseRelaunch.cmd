@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/EE310Projects/lab3/testbench_add_isim_beh.exe" -prj "D:/EE310Projects/lab3/testbench_add_beh.prj" "work.testbench_add" "work.glbl" 

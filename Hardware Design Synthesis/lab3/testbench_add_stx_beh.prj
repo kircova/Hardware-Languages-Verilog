@@ -1,0 +1,5 @@
+verilog isim_temp "take_inputs.v"
+verilog isim_temp "process_inputs.v"
+verilog isim_temp "add.v"
+verilog isim_temp "testbench_add.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
