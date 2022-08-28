@@ -1,1 +1,1 @@
-Hardware Languages Lab assignments. Each project focuses on different aspects of Verilog language and hardware design.
+Hardware Languages Lab assignments. Each project focuses on different aspects of Verilog language and hardware design. Descriptions for assignments are located under the pdf files of the their respected folder, can be also viewed in Read.me files.
