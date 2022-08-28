@@ -14,7 +14,9 @@ interpolated using type B filter with weights (1/64, 4/64, 6 /64, 4 2 /64, 6 /64
 figure given below are interpolated as follows:
 
 a41 = (I11 + 2 *I21 + 6 *I31 + 46 *I41 + 6 *I51 + 2 *I61 + I71) / 64
+
 b41 = (I11 + 4*I21 + 6 *I31 + 4 2 *I41 + 6 *I51 + 4 *I61 + I 7 1) / 64
+
 c41 = (I21 + 10 *I31 + 4 *I41 + 34 *I51 + 4 *I61 + 10 *I71 + I81) / 64
 
 
@@ -25,7 +27,9 @@ are interpolated similarly using type C filter. For example, quarter-pixels e, j
 figure given above are interpolated as follows:
 
 e = (a4 1 + 2 *a42 + 6 *a43 + 46 *a44 + 6 *a45 + 2 *a46 + a47) / 64
+
 j = (b41 + 4*b42 + 6 *b43 + 4 2 *b44 + 6 *b45 + 4 *b46 + b47) / 64
+
 r = (c42 + 10 *c43 + 4 *c44 + 34 *c45 + 4 *c46 + 10 *c47 + c48) / 64
 
 I11 to I88 values (integers in the range [0-255]) will be given as inputs to the
