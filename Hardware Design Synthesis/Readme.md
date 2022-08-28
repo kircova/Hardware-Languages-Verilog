@@ -46,10 +46,15 @@ Port Name Width Direction FPGA pins
 ----------------------------------------------------------------------------------------------------------------
 
 Clock 1 bit Input C
+
 Reset 1 bit Input K
+
 SW 4 bits Input N17, H18, L14, L
+
 BTN 1 bit Input V
+
 Data_Out 4 bits Output M15, P17, R16, R
+
 LCD_Control 3 bits Output M18, L18, L
 
 ----------------------------------------------------------------------------------------------------------------
