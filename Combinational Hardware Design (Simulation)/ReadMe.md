@@ -1,7 +1,3 @@
-## EE 310 Hardware Description Languages
-
-## Spring 20 22
-
 # Laboratory Assignment #
 
 Design a combinational hardware which implements the following sub-pixel
