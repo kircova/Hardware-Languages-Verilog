@@ -1,4 +1,4 @@
-#Laboratory Assignment
+# Laboratory Assignment
 
 Design a sequential hardware which implements the following sub-pixel interpolation
 algorithm.
