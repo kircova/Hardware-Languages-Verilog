@@ -38,15 +38,20 @@ should set 4 switches SW3 (MSB), SW2, SW1, SW 0 (LSB) and press BTN_NORTH
 display it on the LCD screen in hexadecimal format.
 
 Your top-level Verilog RTL module should have the following interface:
+
 ----------------------------------------------------------------------------------------------------------------
+
 Port Name Width Direction FPGA pins
+
 ----------------------------------------------------------------------------------------------------------------
+
 Clock 1 bit Input C
 Reset 1 bit Input K
 SW 4 bits Input N17, H18, L14, L
 BTN 1 bit Input V
 Data_Out 4 bits Output M15, P17, R16, R
 LCD_Control 3 bits Output M18, L18, L
+
 ----------------------------------------------------------------------------------------------------------------
 
 Write a Verilog testbench and verify the correctness of your Verilog RTL
